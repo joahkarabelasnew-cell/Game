@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tic Tac Toe — Neumorph</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="header">
+      <h1>Tic Tac Toe</h1>
+      <div class="controls">
+        <button id="settingsBtn" class="btn soft">Einstellungen</button>
+        <button id="restartBtn" class="btn accent">Neu starten</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="board" class="board" aria-label="Tic Tac Toe Spielfeld"></div>
+      <div class="status" id="status">Spieler X ist dran</div>
+    </main>
+
+    <div id="settings" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <h2>Einstellungen</h2>
+        <div class="setting-row">
+          <label>Hintergrundfarbe</label>
+          <input type="color" id="bgColor">
+        </div>
+        <div class="setting-row">
+          <label>Textfarbe</label>
+          <input type="color" id="textColor">
+        </div>
+        <div class="setting-row">
+          <label>Farbe X</label>
+          <input type="color" id="xColor">
+        </div>
+        <div class="setting-row">
+          <label>Farbe O</label>
+          <input type="color" id="oColor">
+        </div>
+        <div class="setting-row">
+          <label>Layout-Skala: <span id="scaleLabel">100%</span></label>
+          <input id="scaleRange" type="range" min="0" max="500" value="100">
+        </div>
+        <div class="modal-actions">
+          <button id="saveSettings" class="btn soft">Speichern</button>
+          <button id="resetSettings" class="btn">Zurücksetzen</button>
+          <button id="closeSettings" class="btn">Schließen</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
