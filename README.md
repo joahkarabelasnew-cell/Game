@@ -16,7 +16,11 @@ Einstellungen
 - Einstellungen werden in `localStorage` gespeichert.
 
 Dateien
-- index.html — App
-- styles.css — Styling (neumorph)
-- app.js — Spiel-Logik & Einstellungen
-# Game
+- index.html — App (Tabs: Tic Tac Toe + Vier Gewinnt)
+- styles.css — Styling (neumorph + C4 board)
+- app.js — Spiel-Logik & Einstellungen (TicTacToe + Connect Four)
+
+Vier Gewinnt
+- Das Spiel ist im zweiten Tab "Vier Gewinnt" verfügbar.
+- Klick auf eine Spalte, um einen Stein fallen zu lassen. Steine fallen animiert in die Ziel-Zelle.
+- Zwei Spieler an einem Computer: Spieler Rot und Spieler Gelb.
