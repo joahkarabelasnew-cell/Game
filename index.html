@@ -9,16 +9,36 @@
 <body>
   <div class="app" id="app">
     <header class="header">
-      <h1>Tic Tac Toe</h1>
+      <h1>Spiele</h1>
       <div class="controls">
+        <div class="tabs" role="tablist" aria-label="Spiele Tabs">
+          <button class="tab active" data-tab="t3" role="tab">Tic Tac Toe</button>
+          <button class="tab" data-tab="c4" role="tab">Vier Gewinnt</button>
+        </div>
         <button id="settingsBtn" class="btn soft">Einstellungen</button>
-        <button id="restartBtn" class="btn accent">Neu starten</button>
       </div>
     </header>
 
     <main>
-      <div id="board" class="board" aria-label="Tic Tac Toe Spielfeld"></div>
-      <div class="status" id="status">Spieler X ist dran</div>
+      <section class="tab-panel" id="tab-t3" data-tabpanel>
+        <div class="game-header">
+          <div class="controls">
+            <button id="restartBtn" class="btn accent">Neu starten</button>
+          </div>
+        </div>
+        <div id="board" class="board" aria-label="Tic Tac Toe Spielfeld"></div>
+        <div class="status" id="status">Spieler X ist dran</div>
+      </section>
+
+      <section class="tab-panel hidden" id="tab-c4" data-tabpanel>
+        <div class="game-header">
+          <div class="controls">
+            <button id="c4RestartBtn" class="btn accent">Neu starten</button>
+          </div>
+        </div>
+        <div id="c4-board" class="c4-board" aria-label="Vier Gewinnt Spielfeld"></div>
+        <div class="status" id="c4-status">Spieler Rot ist dran</div>
+      </section>
     </main>
 
     <div id="settings" class="modal" aria-hidden="true">
